@@ -1,0 +1,483 @@
+VERSION "HNPBNNNYNNNNNNNNNNNNNNNNNNNNNNNNYNYYYYYYYY>4>%%%/4>'%**4YYY///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: HMI Vehicle ADAS KFM Mobileye ASR
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ Vehicle_yawrate : 0|16@0+ (0.12219,-4004) [-1000|1000] "" Vector__XXX
+ SG_ Vehicle_acc_z : 0|12@0+ (0.002768,-11.15) [-10|10] "" Vector__XXX
+ SG_ Vehicle_acc_y : 0|12@0+ (0.002768,-11.15) [-10|10] "" Vector__XXX
+ SG_ Vehicle_acc_x : 0|12@0+ (0.002768,-11.15) [-10|10] "" Vector__XXX
+ SG_ Vehicle_steer_0 : 0|15@0+ (0.1,0) [0|3276.7] "deg" Vector__XXX
+ SG_ Vehicle_Steer_Flag : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Vehicle_steer_1 : 0|15@0+ (0.1,-6553.6) [-3276.9|0] "deg" Vector__XXX
+
+BO_ 291 HMICmd: 8 Vector__XXX
+ SG_ HMICheck : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HMI_Status1 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HMI_Status0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HMI_State : 8|8@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 226 MCU_CtrlCmd: 8 Vector__XXX
+ SG_ CtrlMode : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ BrakePressure : 16|8@1+ (0.1,0) [0|20] "MPa" Vector__XXX
+
+BO_ 51 Vehicle_1: 8 Vehicle
+ SG_ Vehicle_steer : 23|16@0+ (1,0) [0|65536] ""  ADAS
+
+BO_ 10 KFM_Status: 2 KFM
+ SG_ KFM_Num : 7|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ KFM_MessageCounter : 15|8@0+ (1,0) [0|255] ""  ADAS
+
+BO_ 1548 Obj_2_Quality: 7 ASR
+ SG_ Obj_ID_C : 7|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ Obj_VrelLong_rms : 21|5@0+ (1,0) [0|31] "m/s"  ADAS
+ SG_ Obj_VrelLat_rms : 16|5@0+ (1,0) [0|31] "m/s"  ADAS
+ SG_ Obj_ProbOfExist : 55|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ Obj_Orientation_rms : 33|5@0+ (1,0) [0|31] ""  ADAS
+ SG_ Obj_MeasState : 52|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ Obj_DistLong_rms : 15|5@0+ (1,0) [0|31] "m"  ADAS
+ SG_ Obj_DistLat_rms : 10|5@0+ (1,0) [0|31] "m"  ADAS
+ SG_ Obj_ArelLong_rms : 27|5@0+ (1,0) [0|31] "m/s2"  ADAS
+ SG_ Obj_ArelLat_rms : 38|5@0+ (1,0) [0|31] "m/s2"  ADAS
+
+BO_ 1863 Obstacle_Data_C_4: 8 Mobileye
+ SG_ Obs_Scale_Change_4 : 16|16@1+ (0.0002,0) [-6.5532|6.5532] "pix/s"  ADAS
+ SG_ Obs_Replaced_4 : 44|1@1+ (1,0) [0|1] ""  ADAS
+ SG_ Obs_Angle_Rate_4 : 0|16@1+ (0.01,0) [-327.68|327.68] "deg/s"  ADAS
+ SG_ Obs_Angle_4 : 48|16@1+ (0.01,0) [-327.68|327.68] "deg"  ADAS
+ SG_ Obs_Object_Accel_X_4 : 32|10@1+ (0.03,0) [-14.97|14.97] "m/s2"  ADAS
+
+BO_ 1860 Obstacle_Data_C_3: 8 Mobileye
+ SG_ Obs_Scale_Change_3 : 16|16@1+ (0.0002,0) [-6.5532|6.5532] "pix/s"  ADAS
+ SG_ Obs_Replaced_3 : 44|1@1+ (1,0) [0|1] ""  ADAS
+ SG_ Obs_Angle_Rate_3 : 0|16@1+ (0.01,0) [-327.68|327.68] "deg/s"  ADAS
+ SG_ Obs_Angle_3 : 48|16@1+ (0.01,0) [-327.68|327.68] "deg"  ADAS
+ SG_ Obs_Object_Accel_X_3 : 32|10@1+ (0.03,0) [-14.97|14.97] "m/s2"  ADAS
+
+BO_ 1857 Obstacle_Data_C_2: 8 Mobileye
+ SG_ Obs_Scale_Change_2 : 16|16@1+ (0.0002,0) [-6.5532|6.5532] "pix/s"  ADAS
+ SG_ Obs_Replaced_2 : 44|1@1+ (1,0) [0|1] ""  ADAS
+ SG_ Obs_Angle_Rate_2 : 0|16@1+ (0.01,0) [-327.68|327.68] "deg/s"  ADAS
+ SG_ Obs_Angle_2 : 48|16@1+ (0.01,0) [-327.68|327.68] "deg"  ADAS
+ SG_ Obs_Object_Accel_X_2 : 32|10@1+ (0.03,0) [-14.97|14.97] "m/s2"  ADAS
+
+BO_ 1854 Obstacle_Data_C_1: 8 Mobileye
+ SG_ Obs_Scale_Change_1 : 16|16@1+ (0.0002,0) [-6.5532|6.5532] "pix/s"  ADAS
+ SG_ Obs_Replaced_1 : 44|1@1+ (1,0) [0|1] ""  ADAS
+ SG_ Obs_Angle_Rate_1 : 0|16@1+ (0.01,0) [-327.68|327.68] "deg/s"  ADAS
+ SG_ Obs_Angle_1 : 48|16@1+ (0.01,0) [-327.68|327.68] "deg"  ADAS
+ SG_ Obs_Object_Accel_X_1 : 32|10@1+ (0.03,0) [-14.97|14.97] "m/s2"  ADAS
+
+BO_ 1862 Obstacle_Data_B_4: 8 Mobileye
+ SG_ Obs_Radar_Vel_X_4 : 40|12@1+ (0.0625,0) [-127.93|127.93] "m/s"  ADAS
+ SG_ Obs_Radar_Pos_X_4 : 28|12@1+ (0.0625,0) [0|250] "m"  ADAS
+ SG_ Obs_Radar_Match_Confidence_4 : 52|3@1+ (1,0) [0|5] ""  ADAS
+ SG_ Obs_Width_4 : 8|8@1+ (0.05,0) [0|12.5] "m"  ADAS
+ SG_ Obs_Legnth_4 : 0|8@1+ (0.5,0) [0|31] "m"  ADAS
+ SG_ Obs_Lane_4 : 24|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ Obs_Age_4 : 16|8@1+ (1,0) [0|255] ""  ADAS
+ SG_ Obs_Matched_Radar_ID_4 : 56|7@1+ (1,0) [0|127] ""  ADAS
+ SG_ Obs_CIPV_Flag_4 : 26|1@1+ (1,0) [0|1] ""  ADAS
+
+BO_ 1859 Obstacle_Data_B_3: 8 Mobileye
+ SG_ Obs_Radar_Vel_X_3 : 40|12@1+ (0.0625,0) [-127.93|127.93] "m/s"  ADAS
+ SG_ Obs_Radar_Pos_X_3 : 28|12@1+ (0.0625,0) [0|250] "m"  ADAS
+ SG_ Obs_Radar_Match_Confidence_3 : 52|3@1+ (1,0) [0|5] ""  ADAS
+ SG_ Obs_Width_3 : 8|8@1+ (0.05,0) [0|12.5] "m"  ADAS
+ SG_ Obs_Legnth_3 : 0|8@1+ (0.5,0) [0|31] "m"  ADAS
+ SG_ Obs_Lane_3 : 24|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ Obs_Age_3 : 16|8@1+ (1,0) [0|255] ""  ADAS
+ SG_ Obs_Matched_Radar_ID_3 : 56|7@1+ (1,0) [0|127] ""  ADAS
+ SG_ Obs_CIPV_Flag_3 : 26|1@1+ (1,0) [0|1] ""  ADAS
+
+BO_ 1856 Obstacle_Data_B_2: 8 Mobileye
+ SG_ Obs_Radar_Vel_X_2 : 40|12@1+ (0.0625,0) [-127.93|127.93] "m/s"  ADAS
+ SG_ Obs_Radar_Pos_X_2 : 28|12@1+ (0.0625,0) [0|250] "m"  ADAS
+ SG_ Obs_Radar_Match_Confidence_2 : 52|3@1+ (1,0) [0|5] ""  ADAS
+ SG_ Obs_Width_2 : 8|8@1+ (0.05,0) [0|12.5] "m"  ADAS
+ SG_ Obs_Legnth_2 : 0|8@1+ (0.5,0) [0|31] "m"  ADAS
+ SG_ Obs_Lane_2 : 24|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ Obs_Age_2 : 16|8@1+ (1,0) [0|255] ""  ADAS
+ SG_ Obs_Matched_Radar_ID_2 : 56|7@1+ (1,0) [0|127] ""  ADAS
+ SG_ Obs_CIPV_Flag_2 : 26|1@1+ (1,0) [0|1] ""  ADAS
+
+BO_ 1853 Obstacle_Data_B_1: 8 Mobileye
+ SG_ Obs_Radar_Vel_X_1 : 40|12@1+ (0.0625,0) [-127.93|127.93] "m/s"  ADAS
+ SG_ Obs_Radar_Pos_X_1 : 28|12@1+ (0.0625,0) [0|250] "m"  ADAS
+ SG_ Obs_Radar_Match_Confidence_1 : 52|3@1+ (1,0) [0|5] ""  ADAS
+ SG_ Obs_Width_1 : 8|8@1+ (0.05,0) [0|12.5] "m"  ADAS
+ SG_ Obs_Legnth_1 : 0|8@1+ (0.5,0) [0|31] "m"  ADAS
+ SG_ Obs_Lane_1 : 24|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ Obs_Age_1 : 16|8@1+ (1,0) [0|255] ""  ADAS
+ SG_ Obs_Matched_Radar_ID_1 : 56|7@1+ (1,0) [0|127] ""  ADAS
+ SG_ Obs_CIPV_Flag_1 : 26|1@1+ (1,0) [0|1] ""  ADAS
+
+BO_ 1861 Obstacle_Data_A_4: 8 Mobileye
+ SG_ Obs_Valid_4 : 62|2@1+ (1,0) [1|2] ""  ADAS
+ SG_ Obs_Brake_Lights_4 : 59|1@1+ (1,0) [0|1] ""  ADAS
+ SG_ Obs_Status_4 : 56|3@1+ (1,0) [0|6] ""  ADAS
+ SG_ Obs_Type_4 : 52|3@1+ (1,0) [0|7] ""  ADAS
+ SG_ Obs_Rel_Vel_X_4 : 40|12@1+ (1,0) [-127.93|127.93] ""  ADAS
+ SG_ Obs_Cut_in_and_out_4 : 37|3@1+ (1,0) [0|4] ""  ADAS
+ SG_ Obs_Blinker_Info_4 : 34|3@1+ (1,0) [0|4] ""  ADAS
+ SG_ Obs_Pos_Y_4 : 24|10@1+ (1,0) [0|1024] ""  ADAS
+ SG_ Obs_Pos_X_4 : 8|12@1+ (0.0625,0) [0|250] "m"  ADAS
+ SG_ Obs_ID_4 : 0|8@1+ (1,0) [0|63] ""  ADAS
+
+BO_ 1858 Obstacle_Data_A_3: 8 Mobileye
+ SG_ Obs_Valid_3 : 62|2@1+ (1,0) [1|2] ""  ADAS
+ SG_ Obs_Brake_Lights_3 : 59|1@1+ (1,0) [0|1] ""  ADAS
+ SG_ Obs_Status_3 : 56|3@1+ (1,0) [0|6] ""  ADAS
+ SG_ Obs_Type_3 : 52|3@1+ (1,0) [0|7] ""  ADAS
+ SG_ Obs_Rel_Vel_X_3 : 40|12@1+ (1,0) [-127.93|127.93] ""  ADAS
+ SG_ Obs_Cut_in_and_out_3 : 37|3@1+ (1,0) [0|4] ""  ADAS
+ SG_ Obs_Blinker_Info_3 : 34|3@1+ (1,0) [0|4] ""  ADAS
+ SG_ Obs_Pos_Y_3 : 24|10@1+ (1,0) [0|1024] ""  ADAS
+ SG_ Obs_Pos_X_3 : 8|12@1+ (0.0625,0) [0|250] "m"  ADAS
+ SG_ Obs_ID_3 : 0|8@1+ (1,0) [0|63] ""  ADAS
+
+BO_ 1855 Obstacle_Data_A_2: 8 Mobileye
+ SG_ Obs_Valid_2 : 62|2@1+ (1,0) [1|2] ""  ADAS
+ SG_ Obs_Brake_Lights_2 : 59|1@1+ (1,0) [0|1] ""  ADAS
+ SG_ Obs_Status_2 : 56|3@1+ (1,0) [0|6] ""  ADAS
+ SG_ Obs_Type_2 : 52|3@1+ (1,0) [0|7] ""  ADAS
+ SG_ Obs_Rel_Vel_X_2 : 40|12@1+ (1,0) [-127.93|127.93] ""  ADAS
+ SG_ Obs_Cut_in_and_out_2 : 37|3@1+ (1,0) [0|4] ""  ADAS
+ SG_ Obs_Blinker_Info_2 : 34|3@1+ (1,0) [0|4] ""  ADAS
+ SG_ Obs_Pos_Y_2 : 24|10@1+ (1,0) [0|1024] ""  ADAS
+ SG_ Obs_Pos_X_2 : 8|12@1+ (0.0625,0) [0|250] "m"  ADAS
+ SG_ Obs_ID_2 : 0|8@1+ (1,0) [0|63] ""  ADAS
+
+BO_ 1852 Obstacle_Data_A_1: 8 Mobileye
+ SG_ Obs_Valid_1 : 62|2@1+ (1,0) [1|2] ""  ADAS
+ SG_ Obs_Brake_Lights_1 : 59|1@1+ (1,0) [0|1] ""  ADAS
+ SG_ Obs_Status_1 : 56|3@1+ (1,0) [0|6] ""  ADAS
+ SG_ Obs_Type_1 : 52|3@1+ (1,0) [0|7] ""  ADAS
+ SG_ Obs_Rel_Vel_X_1 : 40|12@1+ (1,0) [-127.93|127.93] ""  ADAS
+ SG_ Obs_Cut_in_and_out_1 : 37|3@1+ (1,0) [0|4] ""  ADAS
+ SG_ Obs_Blinker_Info_1 : 34|3@1+ (1,0) [0|4] ""  ADAS
+ SG_ Obs_Pos_Y_1 : 24|10@1+ (1,0) [0|1024] ""  ADAS
+ SG_ Obs_Pos_X_1 : 8|12@1+ (0.0625,0) [0|250] "m"  ADAS
+ SG_ Obs_ID_1 : 0|8@1+ (1,0) [0|63] ""  ADAS
+
+BO_ 150 Vehicle_0: 8 Vehicle
+ SG_ Vehicle_RealPressure : 23|16@0+ (0.1,0) [0|100] ""  ADAS
+ SG_ Vehicle_BrakePedal : 55|16@0+ (1,0) [0|1000] ""  ADAS
+ SG_ Vehicle_speed : 7|16@0+ (0.01,0) [0|250] "km/h"  ADAS
+ SG_ Vehicle_GearStatus : 39|16@0+ (1,0) [0|255] ""  ADAS
+
+BO_ 11 KFM_Object: 8 KFM
+ SG_ KFM_TimeStamp : 63|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ KFM_track_id : 7|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ KFM_speed_y : 31|8@0+ (1,-128) [-150|150] "m/s"  ADAS
+ SG_ KFM_speed_x : 23|8@0+ (1,-128) [-150|150] "m/s"  ADAS
+ SG_ KFM_obj_class : 15|8@0+ (1,0) [0|7] ""  ADAS
+ SG_ KFM_dix_x : 39|13@0+ (0.2,-500) [0|170] "m"  ADAS
+ SG_ KFM_dis_y : 42|11@0+ (0.2,-204.6) [-204.6|204.8] "m"  ADAS
+
+BO_ 1851 Obstacle_Data_C_0: 8 Mobileye
+ SG_ Obs_Scale_Change_0 : 16|16@1+ (0.0002,0) [-6.5532|6.5532] "pix/s"  ADAS
+ SG_ Obs_Replaced_0 : 44|1@1+ (1,0) [0|1] ""  ADAS
+ SG_ Obs_Angle_Rate_0 : 0|16@1+ (0.01,0) [-327.68|327.68] "deg/s"  ADAS
+ SG_ Obs_Angle_0 : 48|16@1+ (0.01,0) [-327.68|327.68] "deg"  ADAS
+ SG_ Obs_Object_Accel_X_0 : 32|10@1+ (0.03,0) [-14.97|14.97] "m/s2"  ADAS
+
+BO_ 1850 Obstacle_Data_B_0: 8 Mobileye
+ SG_ Obs_Radar_Vel_X_0 : 40|12@1+ (0.0625,0) [-127.93|127.93] "m/s"  ADAS
+ SG_ Obs_Radar_Pos_X_0 : 28|12@1+ (0.0625,0) [0|250] "m"  ADAS
+ SG_ Obs_Radar_Match_Confidence_0 : 52|3@1+ (1,0) [0|5] ""  ADAS
+ SG_ Obs_Width_0 : 8|8@1+ (0.05,0) [0|12.5] "m"  ADAS
+ SG_ Obs_Legnth_0 : 0|8@1+ (0.5,0) [0|31] "m"  ADAS
+ SG_ Obs_Lane_0 : 24|2@1+ (1,0) [0|3] ""  ADAS
+ SG_ Obs_Age_0 : 16|8@1+ (1,0) [0|255] ""  ADAS
+ SG_ Obs_Matched_Radar_ID_0 : 56|7@1+ (1,0) [0|127] ""  ADAS
+ SG_ Obs_CIPV_Flag_0 : 26|1@1+ (1,0) [0|1] ""  ADAS
+
+BO_ 1848 Obstacle_Status: 5 Mobileye
+ SG_ Obs_Mobileye_Timestamp : 8|8@1+ (1,0) [0|255] "ms"  ADAS
+ SG_ Obs_Num_Obstacles : 0|8@1+ (1,0) [0|255] ""  ADAS
+
+BO_ 1849 Obstacle_Data_A_0: 8 Mobileye
+ SG_ Obs_Pos_Y_0 : 24|10@1+ (1,0) [0|1024] ""  ADAS
+ SG_ Obs_Valid_0 : 62|2@1+ (1,0) [1|2] ""  ADAS
+ SG_ Obs_Brake_Lights_0 : 59|1@1+ (1,0) [0|1] ""  ADAS
+ SG_ Obs_Status_0 : 56|3@1+ (1,0) [0|6] ""  ADAS
+ SG_ Obs_Type_0 : 52|3@1+ (1,0) [0|7] ""  ADAS
+ SG_ Obs_Rel_Vel_X_0 : 40|12@1+ (1,0) [-127.93|127.93] ""  ADAS
+ SG_ Obs_Cut_in_and_out_0 : 37|3@1+ (1,0) [0|4] ""  ADAS
+ SG_ Obs_Blinker_Info_0 : 34|3@1+ (1,0) [0|4] ""  ADAS
+ SG_ Obs_Pos_X_0 : 8|12@1+ (0.0625,0) [0|250] "m"  ADAS
+ SG_ Obs_ID_0 : 0|8@1+ (1,0) [0|63] ""  ADAS
+
+BO_ 1549 Obj_3_Extended: 8 ASR
+ SG_ Obj_Class : 26|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ Obj_ArelLat : 20|9@0+ (0.01,-2.5) [-2.5|2.61] "m/s²"  ADAS
+ SG_ Obj_ID_D : 7|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ Obj_OrientationAngle : 39|10@0+ (0.4,-180) [-180|229.2] ""  ADAS
+ SG_ Obj_Width : 63|8@0+ (0.2,0) [0|51] ""  ADAS
+ SG_ Obj_Length : 55|8@0+ (0.2,0) [0|51] "m"  ADAS
+ SG_ Obj_ArelLong : 15|11@0+ (0.01,-10) [-10|10.47] "m/s²"  ADAS
+
+BO_ 1546 Obj_0_Status: 4 ASR
+ SG_ Obj_NofObjects : 7|8@0+ (1,0) [0|255] "1"  ADAS
+ SG_ Obj_MeasCounter : 15|16@0+ (1,0) [0|65535] ""  ADAS
+ SG_ Obj_InterfaceVersion : 31|4@0+ (1,0) [0|16] ""  ADAS
+
+BO_ 1547 Obj_1_General: 8 ASR
+ SG_ Obj_DynProp : 50|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ Obj_RCS : 63|8@0+ (0.5,-64) [-64|63.5] "dBm²"  ADAS
+ SG_ Obj_VrelLat : 45|9@0+ (0.25,-64) [-64|63.75] "m/s"  ADAS
+ SG_ Obj_ID_B : 7|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ Obj_DistLong : 15|13@0+ (0.2,-500) [-500|1138.2] "m"  ADAS
+ SG_ Obj_VrelLong : 39|10@0+ (0.25,-128) [-128|127.75] "m/s"  ADAS
+ SG_ Obj_DistLat : 18|11@0+ (0.2,-204.6) [-204.6|204.8] "m"  ADAS
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 1549 Obj_ArelLat "Relative longitudinal acceleration (Base)";
+CM_ SG_ 1549 Obj_ID_D "Object ID (Base)";
+CM_ SG_ 1549 Obj_Width "Object width
+0 - unknown
+1 - < 0.5m (pedestrian)
+2 - < 1m    (bike)
+3 - < 2m    (car)
+4 - < 3m    (truck)
+5 - < 4m
+6 - < 6m
+7 - exceeds";
+CM_ SG_ 1549 Obj_Length "Object length
+0 - unknown
+1 - < 0.5m
+2 - < 2m
+3 - < 4m
+4 - < 6m
+5 - < 10m
+6 - < 20m
+7 - exceeds";
+CM_ SG_ 1549 Obj_ArelLong "Relative longitudinal acceleration (Base)";
+CM_ SG_ 1546 Obj_NofObjects "Number of Objects sent (Base)";
+CM_ SG_ 1546 Obj_MeasCounter "Meas Counter";
+CM_ SG_ 1546 Obj_InterfaceVersion "Interface Version Number
+Unique number that identifies the version of the CAN interface";
+CM_ SG_ 1547 Obj_DynProp "Dynamic property (Base)
+0 - unclassified
+1 - standing
+2 - stopped
+3 - moving
+4 - oncoming";
+CM_ SG_ 1547 Obj_RCS "RCS value (radar cross section)";
+CM_ SG_ 1547 Obj_VrelLat "Object lateral velocity.
+Value negative = obj moves left to right.
+Value positive = obj moves right to left.";
+CM_ SG_ 1547 Obj_ID_B "Object ID (Base)";
+CM_ SG_ 1547 Obj_DistLong "Longitudinal displacement (Base). Extended for special sensor versions to 1338m. Max distance of the standart version is 250m";
+CM_ SG_ 1547 Obj_VrelLong "Relative longitudinal speed (Base)";
+CM_ SG_ 1547 Obj_DistLat "Lateral displacement (Base)";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "Version" HEX 0 255;
+BA_DEF_  "NmMessageCount" INT 0 64;
+BA_DEF_  "NWID" HEX 0 255;
+BA_DEF_  "NBTMax" INT 0 255;
+BA_DEF_  "NBTMin" INT 0 255;
+BA_DEF_  "SamplePointMax" FLOAT 0 100;
+BA_DEF_  "SamplePointMin" FLOAT 0 100;
+BA_DEF_ SG_  "RID" STRING ;
+BA_DEF_ BO_  "TpTxIndex" INT 0 99;
+BA_DEF_  "NWM-Basisadresse" HEX 0 536870911;
+BA_DEF_  "NWM-Typ" ENUM  "zentral (MB-W210)","dezentral (MB-OSAN)","keines","VAG-OSEK","BMW-OSEK","PAG-OSEK","DBAG-OSEK";
+BA_DEF_ BU_  "NWM-Knoten" ENUM  "nein","ja";
+BA_DEF_ BU_  "NWM-Stationsadresse" HEX 0 63;
+BA_DEF_ SG_  "GenSigStartValue" HEX 0 4294967295;
+BA_DEF_ SG_  "GenSigCycleTimeActive" INT 0 65535;
+BA_DEF_ SG_  "GenSigCycleTime" INT 0 65535;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "cyclicX","spontanX","cyclicIfActiveX","spontanWithDelay","cyclicAndSpontanX","cyclicAndSpontanWithDelay","spontanWithRepitition","cyclicIfActiveAndSpontanWD","cyclicIfActiveFast","cyclicWithRepeatOnDemand","none";
+BA_DEF_ BO_  "GenMsgNrOfRepetitions" INT 0 65535;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgCycleTimeActive" INT 0 65535;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclicX","spontanX","cyclicIfActiveX","spontanWithDelay","cyclicAndSpontanX","cyclicAndSpontanWithDelay","spontanWithRepitition","cyclicIfActiveAndSpontanWD","cyclicIfActiveFast","cyclicWithRepeatOnDemand","none";
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "VersionWeek" INT 0 53;
+BA_DEF_  "VersionYear" INT 0 99;
+BA_DEF_  "Manufacturer" ENUM  "DBAG","VAG","BMWAG","PAG","GM","CONTI";
+BA_DEF_ BO_  "DiagResponse" ENUM  "nein","ja";
+BA_DEF_ BO_  "DiagRequest" ENUM  "nein","ja";
+BA_DEF_ BO_  "DiagState" ENUM  "nein","ja";
+BA_DEF_ BO_  "App-Botschaft" ENUM  "nein","ja";
+BA_DEF_ BO_  "NWM-Botschaft" ENUM  "nein","ja";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "Version" 176;
+BA_DEF_DEF_  "NmMessageCount" 64;
+BA_DEF_DEF_  "NWID" 11;
+BA_DEF_DEF_  "NBTMax" 21;
+BA_DEF_DEF_  "NBTMin" 9;
+BA_DEF_DEF_  "SamplePointMax" 81.25;
+BA_DEF_DEF_  "SamplePointMin" 75;
+BA_DEF_DEF_  "RID" "";
+BA_DEF_DEF_  "TpTxIndex" 0;
+BA_DEF_DEF_  "NWM-Basisadresse" 1024;
+BA_DEF_DEF_  "NWM-Typ" "keines";
+BA_DEF_DEF_  "NWM-Knoten" "";
+BA_DEF_DEF_  "NWM-Stationsadresse" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigCycleTimeActive" 0;
+BA_DEF_DEF_  "GenSigCycleTime" 0;
+BA_DEF_DEF_  "GenSigSendType" "";
+BA_DEF_DEF_  "GenMsgNrOfRepetitions" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeActive" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "VersionWeek" 44;
+BA_DEF_DEF_  "VersionYear" 4;
+BA_DEF_DEF_  "Manufacturer" "DBAG";
+BA_DEF_DEF_  "DiagResponse" "";
+BA_DEF_DEF_  "DiagRequest" "";
+BA_DEF_DEF_  "DiagState" "";
+BA_DEF_DEF_  "App-Botschaft" "";
+BA_DEF_DEF_  "NWM-Botschaft" "";
+BA_ "BusType" "CAN";
+BA_ "Version" 0;
+BA_ "NmMessageCount" 0;
+BA_ "NWID" 0;
+BA_ "NBTMax" 21;
+BA_ "NBTMin" 9;
+BA_ "SamplePointMax" 81.25;
+BA_ "SamplePointMin" 75;
+BA_ "Baudrate" 500000;
+BA_ "NWM-Basisadresse" 0;
+BA_ "VersionWeek" 19;
+BA_ "VersionYear" 6;
+BA_ "NWM-Typ" 2;
+BA_ "Manufacturer" 0;
+BA_ "GenSigStartValue" SG_ 3221225472 Vehicle_yawrate 32768.6390048285;
+BA_ "GenSigStartValue" SG_ 3221225472 Vehicle_acc_z 4028.17919075145;
+BA_ "GenSigStartValue" SG_ 3221225472 Vehicle_acc_y 4028.17919075145;
+BA_ "GenSigStartValue" SG_ 3221225472 Vehicle_acc_x 4028.17919075145;
+BA_ "GenSigStartValue" SG_ 3221225472 Vehicle_steer_1 32767;
+BA_ "GenSigStartValue" SG_ 291 HMI_Status1 3;
+BA_ "GenSigStartValue" SG_ 291 HMI_Status0 1;
+BA_ "GenSigStartValue" SG_ 226 CtrlMode 136;
+BA_ "GenSigStartValue" SG_ 1861 Obs_Valid_4 1;
+BA_ "GenSigStartValue" SG_ 1861 Obs_Pos_Y_4 0;
+BA_ "GenSigStartValue" SG_ 1858 Obs_Valid_3 1;
+BA_ "GenSigStartValue" SG_ 1858 Obs_Pos_Y_3 0;
+BA_ "GenSigStartValue" SG_ 1855 Obs_Valid_2 1;
+BA_ "GenSigStartValue" SG_ 1855 Obs_Pos_Y_2 0;
+BA_ "GenSigStartValue" SG_ 1852 Obs_Valid_1 1;
+BA_ "GenSigStartValue" SG_ 1852 Obs_Pos_Y_1 0;
+BA_ "GenSigStartValue" SG_ 11 KFM_speed_y 128;
+BA_ "GenSigStartValue" SG_ 11 KFM_speed_x 128;
+BA_ "GenSigStartValue" SG_ 11 KFM_dix_x 2500;
+BA_ "GenSigStartValue" SG_ 11 KFM_dis_y 1023;
+BA_ "GenSigStartValue" SG_ 1849 Obs_Pos_Y_0 0;
+BA_ "GenSigStartValue" SG_ 1849 Obs_Valid_0 1;
+BA_ "GenSigStartValue" SG_ 1549 Obj_ArelLat 250;
+BA_ "GenSigStartValue" SG_ 1549 Obj_OrientationAngle 450;
+BA_ "GenSigStartValue" SG_ 1549 Obj_ArelLong 1000;
+BA_ "GenSigStartValue" SG_ 1547 Obj_VrelLat 256;
+BA_ "GenSigStartValue" SG_ 1547 Obj_DistLong 2500;
+BA_ "GenSigStartValue" SG_ 1547 Obj_VrelLong 512;
+BA_ "GenSigStartValue" SG_ 1547 Obj_DistLat 1023;
+VAL_ 1548 Obj_VrelLong_rms 31 "Invalid" 30 "<10.00 m/s" 29 "<7.762 m/s" 28 "<6.025 m/s" 27 "<4.676 m/s" 26 "<3.630 m/s" 25 "<2.817 m/s" 24 "<2.187 m/s" 23 "<1.697 m/s" 22 "<1.317 m/s" 21 "<1.023 m/s" 20 "<0.794 m/s" 19 "<0.616 m/s" 18 "<0.478 m/s" 17 "<0.371 m/s" 16 "<0.288 m/s" 15 "<0.224 m/s" 14 "<0.174 m/s" 13 "<0.135 m/s" 12 "<0.105 m/s" 11 "<0.081 m/s" 10 "<0.063 m/s" 9 "<0.049 m/s" 8 "<0.038 m/s" 7 "<0.029 m/s" 6 "<0.023 m/s" 5 "<0.018 m/s" 4 "<0.014 m/s" 3 "<0.011 m/s" 2 "<0.008 m/s" 1 "<0.006 m/s" 0 "<0.005 m/s" ;
+VAL_ 1548 Obj_VrelLat_rms 31 "Invalid" 30 "<10.00 m/s" 29 "<7.762 m/s" 28 "<6.025 m/s" 27 "<4.676 m/s" 26 "<3.630 m/s" 25 "<2.817 m/s" 24 "<2.187 m/s" 23 "<1.697 m/s" 22 "<1.317 m/s" 21 "<1.023 m/s" 20 "<0.794 m/s" 19 "<0.616 m/s" 18 "<0.478 m/s" 17 "<0.371 m/s" 16 "<0.288 m/s" 15 "<0.224 m/s" 14 "<0.174 m/s" 13 "<0.135 m/s" 12 "<0.105 m/s" 11 "<0.081 m/s" 10 "<0.063 m/s" 9 "<0.049 m/s" 8 "<0.038 m/s" 7 "<0.029 m/s" 6 "<0.023 m/s" 5 "<0.018 m/s" 4 "<0.014 m/s" 3 "<0.011 m/s" 2 "<0.008 m/s" 1 "<0.006 m/s" 0 "<0.005 m/s" ;
+VAL_ 1548 Obj_ProbOfExist 7 "<=100%" 6 "<99.9%" 5 "<99%" 4 "<90%" 3 "<75%" 2 "<50%" 1 "<25%" 0 "invalid" ;
+VAL_ 1548 Obj_Orientation_rms 31 "Invalid" 30 "<180.000 deg" 29 "<126.881 deg" 28 "<89.437 deg" 27 "<63.044 deg" 26 "<44.439 deg" 25 "<31.325 deg" 24 "<22.081 deg" 23 "<15.565 deg" 22 "<10.971 deg" 21 "<7.734 deg" 20 "<5.451 deg" 19 "<3.843 deg" 18 "<2.709 deg" 17 "<1.909 deg" 16 "<1.346 deg" 15 "<0.949 deg" 14 "<0.669 deg" 13 "<0.471 deg" 12 "<0.332 deg" 11 "<0.234 deg" 10 "<0.165 deg" 9 "<0.116 deg" 8 "<0.082 deg" 7 "<0.058 deg" 6 "<0.041 deg" 5 "<0.029 deg" 4 "<0.020 deg" 3 "<0.014 deg" 2 "<0.010 deg" 1 "<0.007 deg" 0 "<0.005 deg" ;
+VAL_ 1548 Obj_MeasState 5 "New from merge" 4 "Deleted for merge" 3 "Predicted" 2 "Measured" 1 "New" 0 "Deleted" ;
+VAL_ 1548 Obj_DistLong_rms 31 "Invalid" 30 "<10.00 m" 29 "<7.762 m" 28 "<6.025 m" 27 "<4.676 m" 26 "<3.630 m" 25 "<2.817 m" 24 "<2.187 m" 23 "<1.697 m" 22 "<1.317 m" 21 "<1.023 m" 20 "<0.794 m" 19 "<0.616 m" 18 "<0.478 m" 17 "<0.371 m" 16 "<0.288 m" 15 "<0.224 m" 14 "<0.174 m" 13 "<0.135 m" 12 "<0.105 m" 11 "<0.081 m" 10 "<0.063 m" 9 "<0.049 m" 8 "<0.038 m" 7 "<0.029 m" 6 "<0.023 m" 5 "<0.018 m" 4 "<0.014 m" 3 "<0.011 m" 2 "<0.008 m" 1 "<0.006 m" 0 "<0.005 m" ;
+VAL_ 1548 Obj_DistLat_rms 31 "Invalid" 30 "<10.00 m" 29 "<7.762 m" 28 "<6.025 m" 27 "<4.676 m" 26 "<3.630 m" 25 "<2.817 m" 24 "<2.187 m" 23 "<1.697 m" 22 "<1.317 m" 21 "<1.023 m" 20 "<0.794 m" 19 "<0.616 m" 18 "<0.478 m" 17 "<0.371 m" 16 "<0.288 m" 15 "<0.224 m" 14 "<0.174 m" 13 "<0.135 m" 12 "<0.105 m" 11 "<0.081 m" 10 "<0.063 m" 9 "<0.049 m" 8 "<0.038 m" 7 "<0.029 m" 6 "<0.023 m" 5 "<0.018 m" 4 "<0.014 m" 3 "<0.011 m" 2 "<0.008 m" 1 "<0.006 m" 0 "<0.005 m" ;
+VAL_ 1548 Obj_ArelLong_rms 31 "Invalid" 30 "<10.00 m/s2" 29 "<7.762 m/s2" 28 "<6.025 m/s2" 27 "<4.676 m/s2" 26 "<3.630 m/s2" 25 "<2.817 m/s2" 24 "<2.187 m/s2" 23 "<1.697 m/s2" 22 "<1.317 m/s2" 21 "<1.023 m/s2" 20 "<0.794 m/s2" 19 "<0.616 m/s2" 18 "<0.478 m/s2" 17 "<0.371 m/s2" 16 "<0.288 m/s2" 15 "<0.224 m/s2" 14 "<0.174 m/s2" 13 "<0.135 m/s2" 12 "<0.105 m/s2" 11 "<0.081 m/s2" 10 "<0.063 m/s2" 9 "<0.049 m/s2" 8 "<0.038 m/s2" 7 "<0.029 m/s2" 6 "<0.023 m/s2" 5 "<0.018 m/s2" 4 "<0.014 m/s2" 3 "<0.011 m/s2" 2 "<0.008 m/s2" 1 "<0.006 m/s2" 0 "<0.005 m/s2" ;
+VAL_ 1548 Obj_ArelLat_rms 31 "Invalid" 30 "<10.00 m/s2" 29 "<7.762 m/s2" 28 "<6.025 m/s2" 27 "<4.676 m/s2" 26 "<3.630 m/s2" 25 "<2.817 m/s2" 24 "<2.187 m/s2" 23 "<1.697 m/s2" 22 "<1.317 m/s2" 21 "<1.023 m/s2" 20 "<0.794 m/s2" 19 "<0.616 m/s2" 18 "<0.478 m/s2" 17 "<0.371 m/s2" 16 "<0.288 m/s2" 15 "<0.224 m/s2" 14 "<0.174 m/s2" 13 "<0.135 m/s2" 12 "<0.105 m/s2" 11 "<0.081 m/s2" 10 "<0.063 m/s2" 9 "<0.049 m/s2" 8 "<0.038 m/s2" 7 "<0.029 m/s2" 6 "<0.023 m/s2" 5 "<0.018 m/s2" 4 "<0.014 m/s2" 3 "<0.011 m/s2" 2 "<0.008 m/s2" 1 "<0.006 m/s2" 0 "<0.005 m/s2" ;
+VAL_ 1863 Obs_Replaced_4 1 "Replaced" 0 "Not replaced" ;
+VAL_ 1860 Obs_Replaced_3 1 "Replaced" 0 "Not replaced" ;
+VAL_ 1857 Obs_Replaced_2 1 "Replaced" 0 "Not replaced" ;
+VAL_ 1854 Obs_Replaced_1 1 "Replaced" 0 "Not replaced" ;
+VAL_ 1862 Obs_Radar_Match_Confidence_4 5 "high confidence match" 4 "vision - radar match" 3 "vision - radar match" 2 "vision - radar match" 1 "Multi match" 0 "No match" ;
+VAL_ 1862 Obs_Lane_4 3 "Invalid signal" 2 "Next lane (left or right)" 1 "Ego lane" 0 "Not assigned" ;
+VAL_ 1862 Obs_CIPV_Flag_4 1 "CIPV" 0 "Not CIPV" ;
+VAL_ 1859 Obs_Radar_Match_Confidence_3 5 "high confidence match" 4 "vision - radar match" 3 "vision - radar match" 2 "vision - radar match" 1 "Multi match" 0 "No match" ;
+VAL_ 1859 Obs_Lane_3 3 "Invalid signal" 2 "Next lane (left or right)" 1 "Ego lane" 0 "Not assigned" ;
+VAL_ 1859 Obs_CIPV_Flag_3 1 "CIPV" 0 "Not CIPV" ;
+VAL_ 1856 Obs_Radar_Match_Confidence_2 5 "high confidence match" 4 "vision - radar match" 3 "vision - radar match" 2 "vision - radar match" 1 "Multi match" 0 "No match" ;
+VAL_ 1856 Obs_Lane_2 3 "Invalid signal" 2 "Next lane (left or right)" 1 "Ego lane" 0 "Not assigned" ;
+VAL_ 1856 Obs_CIPV_Flag_2 1 "CIPV" 0 "Not CIPV" ;
+VAL_ 1853 Obs_Radar_Match_Confidence_1 5 "high confidence match" 4 "vision - radar match" 3 "vision - radar match" 2 "vision - radar match" 1 "Multi match" 0 "No match" ;
+VAL_ 1853 Obs_Lane_1 3 "Invalid signal" 2 "Next lane (left or right)" 1 "Ego lane" 0 "Not assigned" ;
+VAL_ 1853 Obs_CIPV_Flag_1 1 "CIPV" 0 "Not CIPV" ;
+VAL_ 1861 Obs_Valid_4 2 "Older valid" 1 "New valid" ;
+VAL_ 1861 Obs_Brake_Lights_4 1 "On" 0 "Off" ;
+VAL_ 1861 Obs_Status_4 6 "Unused" 5 "Parked" 4 "Oncoming" 3 "Moving" 2 "Stopped (movable)" 1 "Standing" 0 "Undefined" ;
+VAL_ 1861 Obs_Type_4 7 "unuesd" 6 "unuesd" 5 "unuesd" 4 "Bicycle" 3 "Ped" 2 "Bike" 1 "Truck" 0 "Vehicle" ;
+VAL_ 1861 Obs_Cut_in_and_out_4 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 1861 Obs_Blinker_Info_4 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 1858 Obs_Valid_3 2 "Older valid" 1 "New valid" ;
+VAL_ 1858 Obs_Brake_Lights_3 1 "On" 0 "Off" ;
+VAL_ 1858 Obs_Status_3 6 "Unused" 5 "Parked" 4 "Oncoming" 3 "Moving" 2 "Stopped (movable)" 1 "Standing" 0 "Undefined" ;
+VAL_ 1858 Obs_Type_3 7 "unuesd" 6 "unuesd" 5 "unuesd" 4 "Bicycle" 3 "Ped" 2 "Bike" 1 "Truck" 0 "Vehicle" ;
+VAL_ 1858 Obs_Cut_in_and_out_3 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 1858 Obs_Blinker_Info_3 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 1855 Obs_Valid_2 2 "Older valid" 1 "New valid" ;
+VAL_ 1855 Obs_Brake_Lights_2 1 "On" 0 "Off" ;
+VAL_ 1855 Obs_Status_2 6 "Unused" 5 "Parked" 4 "Oncoming" 3 "Moving" 2 "Stopped (movable)" 1 "Standing" 0 "Undefined" ;
+VAL_ 1855 Obs_Type_2 7 "unuesd" 6 "unuesd" 5 "unuesd" 4 "Bicycle" 3 "Ped" 2 "Bike" 1 "Truck" 0 "Vehicle" ;
+VAL_ 1855 Obs_Cut_in_and_out_2 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 1855 Obs_Blinker_Info_2 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 1852 Obs_Valid_1 2 "Older valid" 1 "New valid" ;
+VAL_ 1852 Obs_Brake_Lights_1 1 "On" 0 "Off" ;
+VAL_ 1852 Obs_Status_1 6 "Unused" 5 "Parked" 4 "Oncoming" 3 "Moving" 2 "Stopped (movable)" 1 "Standing" 0 "Undefined" ;
+VAL_ 1852 Obs_Type_1 7 "unuesd" 6 "unuesd" 5 "unuesd" 4 "Bicycle" 3 "Ped" 2 "Bike" 1 "Truck" 0 "Vehicle" ;
+VAL_ 1852 Obs_Cut_in_and_out_1 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 1852 Obs_Blinker_Info_1 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 150 Vehicle_GearStatus 5 "M" 4 "D" 3 "N" 2 "R" 1 "P" ;
+VAL_ 11 KFM_obj_class 7 "Truck" 6 "Reserve" 5 "Bus" 4 "Reserve" 3 "Motorbike" 2 "Car" 1 "Bicycle" 0 "Pedestrian" ;
+VAL_ 1851 Obs_Replaced_0 1 "Replaced" 0 "Not replaced" ;
+VAL_ 1850 Obs_Radar_Match_Confidence_0 5 "high confidence match" 4 "vision - radar match" 3 "vision - radar match" 2 "vision - radar match" 1 "Multi match" 0 "No match" ;
+VAL_ 1850 Obs_Lane_0 3 "Invalid signal" 2 "Next lane (left or right)" 1 "Ego lane" 0 "Not assigned" ;
+VAL_ 1850 Obs_CIPV_Flag_0 1 "CIPV" 0 "Not CIPV" ;
+VAL_ 1849 Obs_Valid_0 2 "Older valid" 1 "New valid" ;
+VAL_ 1849 Obs_Brake_Lights_0 1 "On" 0 "Off" ;
+VAL_ 1849 Obs_Status_0 6 "Unused" 5 "Parked" 4 "Oncoming" 3 "Moving" 2 "Stopped (movable)" 1 "Standing" 0 "Undefined" ;
+VAL_ 1849 Obs_Type_0 7 "unuesd" 6 "unuesd" 5 "unuesd" 4 "Bicycle" 3 "Ped" 2 "Bike" 1 "Truck" 0 "Vehicle" ;
+VAL_ 1849 Obs_Cut_in_and_out_0 4 "cut_out" 3 "cut_in" 2 "out_host_lane" 1 "in_host_lane" 0 "undefined" ;
+VAL_ 1849 Obs_Blinker_Info_0 4 "both" 3 "right" 2 "left" 1 "off" 0 "unavailable" ;
+VAL_ 1549 Obj_Class 7 "Description for the value '0x7'" 6 "Wide" 5 "Bicycle" 4 "Motorcycle" 3 "Pedestrian" 2 "Truck" 1 "Car" 0 "Point" ;
+VAL_ 1547 Obj_DynProp 7 "Stopped" 6 "Crossing moving" 5 "Crossing stationary" 4 "Unknown" 3 "Stationary candidate" 2 "Oncoming" 1 "Stationary" 0 "Moving" ;
+
